@@ -1,7 +1,7 @@
 public class Sekunde{
 	public static void main(String [] args)
 	{
-		int sek = IO.promptAndReadInt("Sekunden: ");
+		int sek = 0;
 		
 		int sekpromin = 60;
 		int sekprostunde = 60*60;
@@ -21,5 +21,6 @@ public class Sekunde{
 		System.out.println("Stunden: " + stunden);
 		System.out.println("Minuten: " + minuten);
 		System.out.println("Sekunden: " + sekunden);
-		}
+
+	}
 }
