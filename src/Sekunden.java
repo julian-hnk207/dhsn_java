@@ -1,15 +1,20 @@
+import java.util.Scanner;
+
 public class Sekunden
 {
 	public static void main (String [] args)
 	{
+		Scanner input = new Scanner(System.in);
+
 		int sek_input;
 		int sekunden;
 		int minuten;
 		int stunden;
 		int tage;
 		int rest;
-		
-		sek_input = IO.promptAndReadInt("Eingabe Sekunden: ");
+
+		System.out.println("Eingabe Sekunden");
+		sek_input = input.nextInt();
 		
 		tage = sek_input / 86400;		//60*60*24
 		rest = sek_input % 86400;

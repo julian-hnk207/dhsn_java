@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class Tannenbaum{
 	public static void main (String [] args){
-		int kronenhoehe = IO.promptAndReadInt("Eingabe Hoehe: ");
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Eingabe Hoehe: ");
+		int kronenhoehe = input.nextInt();
 		
 		zeichnekrone(kronenhoehe);
 		

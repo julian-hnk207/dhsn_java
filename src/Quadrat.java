@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class Quadrat {
 	public static void main (String [] args){
-		int laenge = IO.promptAndReadInt("Eingabe Laenge: ");
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Eingabe Laenge: ");
+		int laenge = input.nextInt();
 		
 		zeichnequadrat (laenge);
 		System.out.println ("Ende");

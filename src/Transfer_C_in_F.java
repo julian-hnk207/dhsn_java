@@ -1,13 +1,17 @@
+import java.util.Scanner;
+
 public class Transfer_C_in_F
 {
 	public static void main (String [] args)
 	{
+		Scanner input = new Scanner(System.in);
 		//Variablen
 		double celsius;
 		double fahrenheit;
 		
 		//Berechnung
-		celsius = IO.promptAndReadInt("Bitte eine Zahl eingeben: ");
+		System.out.println("Bitte eine Zahl eingeben: ");
+		celsius = input.nextDouble();
 		System.out.println("Deine Eingabe: " + celsius);
 		fahrenheit = 1.8 * celsius + 32;
 		

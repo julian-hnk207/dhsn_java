@@ -1,10 +1,14 @@
-
+import java.util.Scanner;
 
 public class BMI {
 	public static void main (String[] args){
-		
-		double g = IO.promptAndReadDouble("Eingabe Gewicht in kg: ");
-		double h = IO.promptAndReadDouble("Eingabe Höhe in m: ");
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Eingabe Gewicht in kg: ");
+		double g = input.nextDouble();
+		System.out.println("Eingabe Höhe in m: ");
+		double h = input.nextDouble();
 		double bmi;
 		
 		//Berechnung

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Methoden {
 
     public static void einfach() {
@@ -84,13 +86,17 @@ public class Methoden {
 	}
 
     public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
         System.out.println("Beispiele für Methoden");
         int x = 10, y = 5, n1 = 7, n2 = 9, exponent = 4, num = 0;
 		double h, G, wert = 0;
 
         einfach();
 		System.out.println("1 - Tannenbaum, 2 - Addition, 3 - Summe, 4 - Exponent, 5 - BMI, 6 - Wurzel");
-		num = IO.promptAndReadInt("Nummer: ");
+		System.out.println("Nummer");
+		num = input.nextInt();
 		
 		switch (num) {
 			case 1:
@@ -126,12 +132,15 @@ public class Methoden {
 				break;
 			case 5:
 				//BMI
-				h = IO.promptAndReadDouble("Körpergröße in Metern: ");
-				G = IO.promptAndReadDouble("Gewicht in Kilogramm: ");		
+				System.out.println("Körpergröße in Metern: ");
+				h = input.nextDouble();
+				System.out.println("Gewicht in Kilogramm: ");
+				G = input.nextDouble();
 				bmi(G, h, wert);
 				break;
 			case 6:
-				double hoch = IO.promptAndReadInt("Zahl: ");
+				System.out.println("Zahl: ");
+				double hoch = input.nextDouble();
 				double ergebnisWurzel = wurzel(hoch);
 				System.out.println("Wurzel: " + ergebnisWurzel);
 				break; 
