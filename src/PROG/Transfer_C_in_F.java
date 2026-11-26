@@ -1,3 +1,5 @@
+package PROG;
+
 import java.util.Scanner;
 
 public class Transfer_C_in_F

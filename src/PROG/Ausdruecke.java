@@ -1,3 +1,5 @@
+package PROG;
+
 public class Ausdruecke
 {
 	public static void main (String [] args)

@@ -1,3 +1,5 @@
+package PROG;
+
 public class Sekunde{
 	public static void main(String [] args)
 	{

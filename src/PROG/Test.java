@@ -1,3 +1,5 @@
+package PROG;
+
 public class Test {
     public static void main(String[] args) {
         // Hier kannst du die gewünschte Anzahl der Zeilen vorgeben

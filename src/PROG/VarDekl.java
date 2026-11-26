@@ -1,3 +1,5 @@
+package PROG;
+
 public class VarDekl
 {
 	public static void main(String [] args)

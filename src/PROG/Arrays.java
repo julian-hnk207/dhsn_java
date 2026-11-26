@@ -1,3 +1,5 @@
+package PROG;
+
 public class Arrays{
 	public static void main (String [] args){
 		/* int [] integer = {1,2,3,4};

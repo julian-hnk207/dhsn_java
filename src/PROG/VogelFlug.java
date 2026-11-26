@@ -1,3 +1,5 @@
+package PROG;
+
 public class VogelFlug {
 
     public static void main(String[] args) throws InterruptedException {

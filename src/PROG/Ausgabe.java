@@ -1,3 +1,5 @@
+package PROG;
+
 public class Ausgabe
 {
 	public static void main (String [] args)
